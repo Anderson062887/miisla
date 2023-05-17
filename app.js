@@ -4,10 +4,10 @@ const express = require("express");
 const app = express();
 
 app.get("/",(re,res)=>{
-  res.send("mi islard from express")
+  res.send("mi islard from express comming soon")
 })
 app.get("/about",(req,res)=>{
-  res.send("about page")
+  res.send("about page comming soon")
 })
 // http.createServer(function(req,res){
 //   res.write("mi islard")
