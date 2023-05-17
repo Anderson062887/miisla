@@ -11,7 +11,7 @@ app.get("/about",(req,res)=>{
 })
 
 app.get("/location",(req,res)=>{
-  res.send("Location page comming soon")
+  res.send("Location page comming soon.")
 })
 // http.createServer(function(req,res){
 //   res.write("mi islard")
