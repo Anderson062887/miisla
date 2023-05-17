@@ -9,6 +9,10 @@ app.get("/",(re,res)=>{
 app.get("/about",(req,res)=>{
   res.send("about page comming soon")
 })
+
+app.get("/location",(req,res)=>{
+  res.send("Location page comming soon")
+})
 // http.createServer(function(req,res){
 //   res.write("mi islard")
 //   res.end()	
