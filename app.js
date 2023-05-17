@@ -11,13 +11,10 @@ app.get("/about",(req,res)=>{
 })
 
 app.get("/location",(req,res)=>{
-  res.send("Location page comming soon.")
+  res.send("location page comming soon.")
 })
-// http.createServer(function(req,res){
-//   res.write("mi islard")
-//   res.end()	
 
-// }).listen(3000)
+
 app.listen(3000,()=>{
   console.log("running server")
 })
