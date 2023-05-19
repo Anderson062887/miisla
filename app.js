@@ -1,10 +1,19 @@
-const http = require("http")
+
 const express = require("express");
+const path = require("path");
+const fs = require("fs");
+
 
 const app = express();
 
 app.get("/",(re,res)=>{
-  res.send("mi islard from express comming soon")
+
+  fs.readFile(path.join(__dirname,"bundle","index.html"),(e,data)=>{
+    if(!e){
+     res.send(data.toString())
+    }
+  })
+
 })
 app.get("/about",(req,res)=>{
   res.send("about page comming soon")
