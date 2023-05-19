@@ -7,12 +7,13 @@ const fs = require("fs");
 const app = express();
 
 app.get("/",(re,res)=>{
-
-  fs.readFile(path.join(__dirname,"build","index.html"),(e,data)=>{
-    if(!e){
-     res.send(data.toString())
-    }
-  })
+ 
+  res.sendFile(path.join(__dirname,"/build/index.html"))
+  // fs.readFile(path.join(__dirname,"build","index.html"),(e,data)=>{
+  //   if(!e){
+  //    res.send(data.toString())
+  //   }
+  // })
 
 })
 app.get("/about",(req,res)=>{
