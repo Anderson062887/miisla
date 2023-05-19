@@ -8,7 +8,7 @@ const app = express();
 
 app.get("/",(re,res)=>{
 
-  fs.readFile(path.join(__dirname,"bundle","index.html"),(e,data)=>{
+  fs.readFile(path.join(__dirname,"build","index.html"),(e,data)=>{
     if(!e){
      res.send(data.toString())
     }
