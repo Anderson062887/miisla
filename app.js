@@ -3,8 +3,12 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 
+const buildPath = path.join(__dirname,"build")
 
 const app = express();
+app.use(express.static(buildPath))
+app.use(express.json())//parsing the uncoming json
+app.use(express.urlencoded({extended:true}));
 
 app.get("/",(re,res)=>{
  
